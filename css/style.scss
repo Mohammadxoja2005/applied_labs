@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+.loader {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 3;
+}
+
+body {
+  display: none;
+}
+
 .swiper-slide {
   width: 30% !important;
 }
@@ -36,10 +49,6 @@
 }
 
 // header ================================================================================= header
-
-body {
-  position: relative;
-}
 
 header {
   max-width: 1440px;
@@ -522,8 +531,8 @@ footer {
 @media screen and (max-width: 810px) {
   .navbar_menu {
     display: none;
-  } 
-  
+  }
+
   .navbar_menu_mobile {
     display: flex;
     align-items: center;

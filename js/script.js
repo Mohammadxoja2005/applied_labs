@@ -85,25 +85,72 @@ var swiper = new Swiper(".mySwiper", {
 // @media (min-width: 1400px) { ... } 
 
 
-const hamburger = document.querySelector(".navbar_menu_hamburger");
-const mobileContainer = document.querySelector('.mobile_container');
-const mobileClose = document.querySelector(".mobile_close");
-const mobileLinks = document.querySelector(".mobile_links");
-const body = document.querySelector("body");
+// const hamburger = document.querySelector(".navbar_menu_hamburger");
+// const mobileContainer = document.querySelector('.mobile_container');
+// const mobileClose = document.querySelector(".mobile_close");
+// const mobileLinks = document.querySelector(".mobile_links");
+// const body = document.querySelector("body");
 
-hamburger.addEventListener("click", () => {
-    mobileContainer.style.left = "0";
-    body.classList.add("stopScroll");
-})
+// hamburger.addEventListener("click", () => {
+//     mobileContainer.style.left = "0";
+//     body.classList.add("stopScroll");
+// })
 
-mobileClose.addEventListener("click", () => {
-    mobileContainer.style.left = "-1000px";
-    body.classList.remove("stopScroll");
-})
+// mobileClose.addEventListener("click", () => {
+//     mobileContainer.style.left = "-1000px";
+//     body.classList.remove("stopScroll");
+// })
 
-mobileContainer.addEventListener("click", (e) => {
-    if (!mobileLinks.contains(e.target)) {
-        mobileContainer.style.left = "-1000px";
-        body.classList.remove("stopScroll");
-    }
-})
+// mobileContainer.addEventListener("click", (e) => {
+//     if (!mobileLinks.contains(e.target)) {
+//         mobileContainer.style.left = "-1000px";
+//         body.classList.remove("stopScroll");
+//     }
+// })  
+
+const loader = document.querySelector(".loader"); 
+loader.style.display = "block" 
+
+if (document.readyState === "complete") {
+    // Fully loaded!
+    console.log('dom fully loaded')
+}
+else if (document.readyState === "interactive") {
+    // DOM ready! Images, frames, and other subresources are still downloading. 
+    console.log('some images and other stuff still loading') ;
+}
+else {
+
+
+    window.addEventListener("DOMContentLoaded", () => {
+
+        const hamburger = document.querySelector(".navbar_menu_hamburger");
+        const mobileContainer = document.querySelector('.mobile_container');
+        const mobileClose = document.querySelector(".mobile_close");
+        const mobileLinks = document.querySelector(".mobile_links");
+        const body = document.querySelector("body");
+        
+        body.style.display = "block";
+
+        hamburger.addEventListener("click", () => {
+            mobileContainer.style.left = "0";
+            body.classList.add("stopScroll");
+        })
+
+        mobileClose.addEventListener("click", () => {
+            mobileContainer.style.left = "-1000px";
+            body.classList.remove("stopScroll");
+        })
+
+        mobileContainer.addEventListener("click", (e) => {
+            if (!mobileLinks.contains(e.target)) {
+                mobileContainer.style.left = "-1000px";
+                body.classList.remove("stopScroll");
+            }
+        })
+    });
+
+    window.addEventListener("load", () => {
+        loader.style.display = "none";
+    });
+}
