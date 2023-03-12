@@ -85,7 +85,7 @@ var swiper = new Swiper(".mySwiper", {
 // @media (min-width: 1400px) { ... } 
 
 
-const hamburger = document.querySelector(".header_menu_hamburger");
+const hamburger = document.querySelector(".navbar_menu_hamburger");
 const mobileContainer = document.querySelector('.mobile_container');
 const mobileClose = document.querySelector(".mobile_close");
 const mobileLinks = document.querySelector(".mobile_links");
