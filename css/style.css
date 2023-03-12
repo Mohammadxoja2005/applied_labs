@@ -268,16 +268,16 @@ header {
 footer {
   max-width: 1440px;
   margin: auto;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   padding-top: 80px;
 }
 
 .footer_container {
-  max-width: 900px;
+  max-width: 1010px;
   margin: auto;
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footer_newsletter {
@@ -301,24 +301,25 @@ footer {
 .footer_input {
   border: none;
   outline: none;
-  border-bottom: 2px solid #C4C4C4;
+  border-bottom: 2px solid #c4c4c4;
   padding-bottom: 16px;
   width: 460px;
   color: black;
   font-family: sans-regular;
   font-weight: 400;
   font-size: 14px;
+  background-color: transparent;
 }
 
 .footer_input::-moz-placeholder {
-  color: #C4C4C4;
+  color: #c4c4c4;
   font-family: sans-regular;
   font-weight: 400;
   font-size: 14px;
 }
 
 .footer_input::placeholder {
-  color: #C4C4C4;
+  color: #c4c4c4;
   font-family: sans-regular;
   font-weight: 400;
   font-size: 14px;
@@ -335,4 +336,39 @@ footer {
   display: flex;
   gap: 20px;
   cursor: pointer;
+}
+
+.footer_links_container {
+  display: flex;
+  gap: 185px;
+  align-items: flex-start;
+}
+
+.footer_link_space_control {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_link_title {
+  color: #353535;
+  text-transform: uppercase;
+  font-family: sans-regular;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+}
+
+.footer_link {
+  color: #7E7E7E;
+  font-size: 14px;
+  font-family: sans-regular;
+  font-weight: 400;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
