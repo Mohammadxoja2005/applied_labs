@@ -47,8 +47,11 @@
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 16,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
     breakpoints: {
-        // when window width is >= 768px
         768: {
             slidesPerView: "auto",
             spaceBetween: 16
@@ -86,17 +89,21 @@ const hamburger = document.querySelector(".header_menu_hamburger");
 const mobileContainer = document.querySelector('.mobile_container');
 const mobileClose = document.querySelector(".mobile_close");
 const mobileLinks = document.querySelector(".mobile_links");
+const body = document.querySelector("body");
 
 hamburger.addEventListener("click", () => {
     mobileContainer.style.left = "0";
+    body.classList.add("stopScroll");
 })
 
 mobileClose.addEventListener("click", () => {
     mobileContainer.style.left = "-1000px";
+    body.classList.remove("stopScroll");
 })
 
 mobileContainer.addEventListener("click", (e) => {
     if (!mobileLinks.contains(e.target)) {
         mobileContainer.style.left = "-1000px";
+        body.classList.remove("stopScroll");
     }
 })
