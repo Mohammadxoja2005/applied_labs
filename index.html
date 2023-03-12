@@ -6,13 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/font.css">
-    <script src="/js/script.js" defer></script>
+    <style>
+        /* html,
+        body {
+            position: relative;
+            height: 100%;
+        } */
+/* 
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        } */
+
+        /* .swiper {
+            width: 1330px !important;
+            height: 100%;
+        } */
+
+        /* .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        /* .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } */
+    </style>
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <div class="header_announce">
             <p class="header_announce_title">20% OFF Sitewide until 9/12</p>
         </div>
@@ -101,90 +137,91 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
 
     <section class="shop">
 
         <div class="shop_container">
             <h2 class="shop_title">You might also like</h2>
-
-            <div class="shop_product_container">
-
-                <div class="shop_product">
-                    <div class="shop_img_container">
-                        <p class="shop_img_ship">Free Shipping</p>
-                        <img class="shop_img" src="/assets/images/img1.png" alt="">
-                    </div>
-                    <div class="shop_product_info">
-                        <p class="shop_product_title">Product Name</p>
-                        <div class="shop_star_container">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
+            <div class="swiper mySwiper">
+                <div class="shop_product_container swiper-wrapper">
+                    <div class="shop_product swiper-slide">
+                        <div class="shop_img_container">
+                            <p class="shop_img_ship">Free Shipping</p>
+                            <img class="shop_img" src="/assets/images/img1.png" alt="">
                         </div>
-                        <p class="shop_product_price">$34.00</p>
+                        <div class="shop_product_info">
+                            <p class="shop_product_title">Product Name</p>
+                            <div class="shop_star_container">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                            </div>
+                            <p class="shop_product_price">$34.00</p>
+                        </div>
+                    </div>
+                    <div class="shop_product swiper-slide">
+                        <div class="shop_img_container">
+                            <p class="shop_img_ship">Free Shipping</p>
+                            <img class="shop_img" src="/assets/images/img2.png" alt="">
+                        </div>
+                        <div class="shop_product_info">
+                            <p class="shop_product_title">Product Name</p>
+                            <div class="shop_star_container">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                            </div>
+                            <p class="shop_product_price">$34.00</p>
+                        </div>
+                    </div>
+                    <div class="shop_product swiper-slide">
+                        <div class="shop_img_container">
+                            <p class="shop_img_ship">Free Shipping</p>
+                            <img class="shop_img" src="/assets/images/img3.png" alt="">
+                        </div>
+                        <div class="shop_product_info">
+                            <p class="shop_product_title">Product Name</p>
+                            <div class="shop_star_container">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                            </div>
+                            <p class="shop_product_price">$34.00</p>
+                        </div>
+                    </div>
+                    <div class="shop_product swiper-slide">
+                        <div class="shop_img_container">
+                            <p class="shop_img_ship">Free Shipping</p>
+                            <img class="shop_img" src="/assets/images/img4.png" alt="">
+                        </div>
+                        <div class="shop_product_info">
+                            <p class="shop_product_title">Product Name</p>
+                            <div class="shop_star_container">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                                <img src="/assets/icons/star.png" alt="">
+                            </div>
+                            <p class="shop_product_price">$34.00</p>
+                        </div>
                     </div>
                 </div>
-                <div class="shop_product">
-                    <div class="shop_img_container">
-                        <p class="shop_img_ship">Free Shipping</p>
-                        <img class="shop_img" src="/assets/images/img2.png" alt="">
-                    </div>
-                    <div class="shop_product_info">
-                        <p class="shop_product_title">Product Name</p>
-                        <div class="shop_star_container">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                        </div>
-                        <p class="shop_product_price">$34.00</p>
-                    </div>
-                </div>
-                <div class="shop_product">
-                    <div class="shop_img_container">
-                        <p class="shop_img_ship">Free Shipping</p>
-                        <img class="shop_img" src="/assets/images/img3.png" alt="">
-                    </div>
-                    <div class="shop_product_info">
-                        <p class="shop_product_title">Product Name</p>
-                        <div class="shop_star_container">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                        </div>
-                        <p class="shop_product_price">$34.00</p>
-                    </div>
-                </div>
-                <div class="shop_product">
-                    <div class="shop_img_container">
-                        <p class="shop_img_ship">Free Shipping</p>
-                        <img class="shop_img" src="/assets/images/img4.png" alt="">
-                    </div>
-                    <div class="shop_product_info">
-                        <p class="shop_product_title">Product Name</p>
-                        <div class="shop_star_container">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                            <img src="/assets/icons/star.png" alt="">
-                        </div>
-                        <p class="shop_product_price">$34.00</p>
-                    </div>
-                </div>
-
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
 
     </section>
 
-    <footer>
+    <!-- <footer>
 
         <div class="footer_container">
             <div class="footer_control_div">
@@ -229,8 +266,8 @@
                     </div>
                 </div>
             </div>
-                <p class="footer_right_text">©2020 Again Faster. All Rights Reserved</p>
-            <!-- <div class="footer_links_container">
+            <p class="footer_right_text">©2020 Again Faster. All Rights Reserved</p> -->
+    <!-- <div class="footer_links_container">
                 <div class="footer_links">
                     <h3 class="footer_link_title">Again faster</h3>
 
@@ -257,9 +294,26 @@
                 </div>
             </div> -->
 
-        </div>
+    <!-- </div>
 
-    </footer>
+    </footer> -->
+    <!-- <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div> -->
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="/js/script.js"></script>
 
 </html>
