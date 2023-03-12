@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header_announce {
+  display: flex;
+  justify-content: center;
+  background-color: #fbfbfb;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 1330px;
+  margin: auto;
+}
+
+.header_announce_title {
+  font-size: 12px;
+  font-family: oswald-regular;
+  font-weight: 300;
+  max-width: 1440px;
+}
+
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+}
+
+.header_menu_logo {
+  letter-spacing: 4px;
+  font-family: sans-bold;
+  font-weight: 600;
+}
+
+.header_menu_links {
+  display: flex;
+  gap: 40px;
+}
+
+.header_menu_link {
+  text-decoration: none;
+  color: black;
+  font-family: sans-regular;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.header_menu_link > li {
+  list-style: none;
+}
+
+.header_menu_features {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  cursor: pointer;
+}
+
+.about {
+  padding-top: 55px;
+  background-color: #000;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.about_container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  max-width: 1330px;
+  margin: 0 0 0 auto;
+}
+
+.about_info_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_title {
+  font-size: 28px;
+  font-family: sans-semibold;
+  margin-bottom: 126px;
+  color: white;
+}
+
+.about_des {
+  font-size: 14px;
+  font-family: sans-regular;
+  color: white;
+  margin-bottom: 80px;
+  max-width: 600px;
+  line-height: 23.45px;
+}
+
+.about_add_info {
+  font-size: 14px;
+  color: white;
+  font-family: sans-regular;
+}
+
+.about_img {
+  width: 526x;
+  height: 526px;
+}
+
+.features {
+  max-width: 1440px;
+  background-color: #000;
+  padding-top: 80px;
+  margin: auto;
+}
+
+.features_container {
+  max-width: 1330px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.features_img {
+  width: 680px;
+  height: 460px;
+}
+
+.features_about {
+  margin: auto;
+}
+
+.features_about__intro {
+  font-family: sans-regular;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.features_about_des {
+  font-family: sans-bold;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 16px;
+  max-width: 500px;
+}
+
+.features_about_des:last-child {
+  margin-bottom: 0;
+}
+
+.versatile {
+  max-width: 1440px;
+  background-color: #000;
+  padding-top: 80px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.versatile_container {
+  max-width: 1330px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.versatile_title {
+  color: white;
+  font-size: 40px;
+  font-family: sans-bold;
+  max-width: 400px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.versatile_img {
+  width: 680px;
+  height: 460px;
+}
+
+.shop {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.shop_container {
+  max-width: 1330px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop_title {
+  font-size: 28px;
+  font-family: sans-regular;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+
+.shop_product_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  max-width: 1360;
+  overflow: auto;
+}
+
+.shop_img_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.shop_img_ship {
+  background-color: white;
+  padding: 4px 7px;
+  font-size: 12px;
+  font-family: sans-regular;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+
+.shop_img {
+  width: 328px;
+  height: 410px;
+}
+
+.shop_product_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.shop_product_title {
+  font-size: 12px;
+  font-family: oswald-regular;
+  margin-bottom: 8px;
+}
+
+.shop_star_container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.shop_product_price {
+  font-size: 12px;
+  font-family: oswald-regular;
+}/*# sourceMappingURL=style.css.map */
