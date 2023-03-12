@@ -30,6 +30,7 @@ header {
 .container {
   max-width: 1330px;
   margin: auto;
+  padding: 0 16px;
 }
 
 .header_announce_title {
@@ -44,6 +45,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 17px 0;
+}
+
+.header_menu_mobile {
+  display: none;
 }
 
 .header_menu_logo {
@@ -200,6 +205,7 @@ header {
   max-width: 1440px;
   margin: auto;
   margin-bottom: 94px;
+  padding: 0 16px;
 }
 
 .shop_container {
@@ -385,6 +391,17 @@ footer {
   font-weight: 300;
 }
 
+@media screen and (max-width: 810px) {
+  .header_menu {
+    display: none;
+  }
+  .header_menu_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0;
+  }
+}
 @media screen and (max-width: 576px) {
   .swiper-slide {
     width: 45% !important;
