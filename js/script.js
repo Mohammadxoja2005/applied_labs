@@ -64,7 +64,7 @@ var swiper = new Swiper(".mySwiper", {
             spaceBetween: 8
         }
     }
-}); 
+});
 
 
 // @media (min-width: 576px) { ... }
@@ -79,4 +79,24 @@ var swiper = new Swiper(".mySwiper", {
 // @media (min-width: 1200px) { ... }
 
 // // XX-Large devices (larger desktops, 1400px and up)
-// @media (min-width: 1400px) { ... }
+// @media (min-width: 1400px) { ... } 
+
+
+const hamburger = document.querySelector(".header_menu_hamburger");
+const mobileContainer = document.querySelector('.mobile_container');
+const mobileClose = document.querySelector(".mobile_close");
+const mobileLinks = document.querySelector(".mobile_links");
+
+hamburger.addEventListener("click", () => {
+    mobileContainer.style.left = "0";
+})
+
+mobileClose.addEventListener("click", () => {
+    mobileContainer.style.left = "-1000px";
+})
+
+mobileContainer.addEventListener("click", (e) => {
+    if (!mobileLinks.contains(e.target)) {
+        mobileContainer.style.left = "-1000px";
+    }
+})

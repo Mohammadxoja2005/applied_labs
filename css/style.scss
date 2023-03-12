@@ -19,6 +19,7 @@
 header {
   max-width: 1440px;
   margin: auto;
+  position: relative;
 }
 
 .header_announce {
@@ -30,7 +31,7 @@ header {
 
 .container {
   max-width: 1330px;
-  margin: auto; 
+  margin: auto;
   padding: 0 16px;
 }
 
@@ -46,10 +47,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 17px 0;
-} 
+}
 
 .header_menu_mobile {
-    display: none;
+  display: none;
 }
 
 .header_menu_logo {
@@ -81,6 +82,10 @@ header {
   align-items: center;
   gap: 17px;
   cursor: pointer;
+}
+
+.mobile_container {
+  display: none;
 }
 
 // about ================================================================================= about
@@ -413,16 +418,70 @@ footer {
   font-weight: 300;
 }
 
-@media screen and (max-width: 810px) { 
-    .header_menu {
-        display: none;
-    } 
-    .header_menu_mobile {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 17px 0;
-    }
+@media screen and (max-width: 810px) {
+  .header_menu {
+    display: none;
+  }
+  .header_menu_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0;
+  }
+
+  .mobile_container {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    background-color: #c4c4c4;
+    transition: 0.5s all ease-in-out;
+    left: -1000px;
+  }
+
+  .mobile_links {
+    bottom: -40px;
+    width: 325px;
+    left: 0;
+    height: 100vh;
+    background-color: white;
+    padding: 16px;
+  }
+
+  .mobile_login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .mobile_login_enter_container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-right: 1px solid #c4c4c4;
+    padding: 5px 0;
+    width: 88%;
+  }
+
+  .mobile_login_name {
+    font-weight: 400;
+    font-family: sans-regular;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .mobile_close {
+    width: 18px;
+    height: 18px;
+  }
+
+  .mobile_links_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 @media screen and (max-width: 576px) {
