@@ -168,7 +168,7 @@ header {
 .versatile {
   max-width: 1440px;
   background-color: #000;
-  padding-top: 80px;
+  padding: 80px 0; 
   margin: auto;
   margin-bottom: 80px;
 }
@@ -200,6 +200,7 @@ header {
 .shop {
   max-width: 1440px;
   margin: auto;
+  margin-bottom: 94px;
 }
 
 .shop_container {
@@ -214,13 +215,15 @@ header {
   font-family: sans-regular;
   text-transform: uppercase;
   margin-bottom: 42px;
+  letter-spacing: 3px;
+  font-weight: 400;
 }
 
 .shop_product_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 16px;
-    max-width: 1360;
+    max-width: 1330px;
     overflow: auto;
 }
 
@@ -257,6 +260,8 @@ header {
     font-size: 12px;
     font-family: oswald-regular;
     margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 } 
 
 .shop_star_container {
@@ -269,4 +274,77 @@ header {
 .shop_product_price {
     font-size: 12px;    
     font-family: oswald-regular;
+    letter-spacing: 2px;
+} 
+
+// footer ================================================================================= footer  
+
+footer{
+    max-width: 1440px;
+    margin: auto;
+    background-color: #F1F1F1;
+    padding-top: 80px;
+} 
+
+.footer_container {
+    max-width: 900px;
+    margin: auto;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.footer_newsletter {
+    display: flex;
+    flex-direction: column;
 }
+
+.footer_newsletter_name {
+    font-size: 12px;
+    font-family: sans-regular;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 29px;
+} 
+
+.footer_input_container {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.footer_input {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #C4C4C4;
+    padding-bottom: 16px;
+    width: 460px; 
+    color: black;
+    font-family: sans-regular;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer_input::placeholder {
+    color: #C4C4C4;
+    font-family: sans-regular;
+    font-weight: 400;
+    font-size: 14px;
+} 
+
+.footer_input_arrow {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    cursor: pointer;
+} 
+
+.footer_media {
+    display: flex;
+    gap: 20px;
+    cursor: pointer
+    ;
+}
+
+
+
+
