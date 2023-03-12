@@ -26,17 +26,24 @@
   height: 8px;
 }
 
-// header ================================================================================= header
-
-header {
-  max-width: 1440px;
-  margin: auto;
-  position: relative;
+.swiper {
+  z-index: 0 !important;
 }
 
 .stopScroll {
   height: 100%;
   overflow: hidden;
+}
+
+// header ================================================================================= header
+
+body {
+  position: relative;
+}
+
+header {
+  max-width: 1440px;
+  margin: auto;
 }
 
 .header_announce {
@@ -57,6 +64,16 @@ header {
   font-family: oswald-regular;
   font-weight: 300;
   max-width: 1440px;
+}
+
+.menu {
+  max-width: 1440px;
+  margin: auto;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
 }
 
 .header_menu {
@@ -505,7 +522,8 @@ footer {
 @media screen and (max-width: 810px) {
   .header_menu {
     display: none;
-  }
+  } 
+  
   .header_menu_mobile {
     display: flex;
     align-items: center;
@@ -517,11 +535,10 @@ footer {
     display: block;
     width: 100%;
     height: 100vh;
-    position: absolute;
-    z-index: 999 !important;
+    position: fixed;
+    z-index: 2;
     transition: 0.5s all ease-in-out;
     left: -1000px;
-    filter: blur(3);
   }
 
   .mobile_links {
