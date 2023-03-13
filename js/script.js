@@ -108,8 +108,8 @@ var swiper = new Swiper(".mySwiper", {
 //     }
 // })  
 
-const loader = document.querySelector(".loader"); 
-loader.style.display = "block" 
+const loader = document.querySelector(".loader");
+loader.classList.add('addStyleLoader')
 
 if (document.readyState === "complete") {
     // Fully loaded!
@@ -117,7 +117,7 @@ if (document.readyState === "complete") {
 }
 else if (document.readyState === "interactive") {
     // DOM ready! Images, frames, and other subresources are still downloading. 
-    console.log('some images and other stuff still loading') ;
+    console.log('some images and other stuff still loading');
 }
 else {
 
@@ -129,7 +129,7 @@ else {
         const mobileClose = document.querySelector(".mobile_close");
         const mobileLinks = document.querySelector(".mobile_links");
         const body = document.querySelector("body");
-        
+
         body.style.display = "block";
 
         hamburger.addEventListener("click", () => {

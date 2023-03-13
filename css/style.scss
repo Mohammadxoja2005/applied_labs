@@ -11,6 +11,17 @@
   background-color: white;
   position: fixed;
   z-index: 3;
+} 
+
+.addStyleLoader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader_text {
+   font-size: 28px;
+   font-family: sans-bold;
 }
 
 body {
