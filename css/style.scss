@@ -11,17 +11,17 @@
   background-color: white;
   position: fixed;
   z-index: 3;
-} 
+}
 
 .addStyleLoader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loader_text {
-   font-size: 28px;
-   font-family: sans-bold;
+  font-size: 28px;
+  font-family: sans-bold;
 }
 
 body {
@@ -563,7 +563,7 @@ footer {
 
   .mobile_links {
     bottom: -40px;
-    width: 325px;
+    width: 300px;
     left: 0;
     height: 100vh;
     background-color: white;
