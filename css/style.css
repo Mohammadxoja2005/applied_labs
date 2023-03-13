@@ -676,7 +676,7 @@ footer {
 @media screen and (max-width: 576px) {
   .swiper-slide {
     width: 45% !important;
-  } 
+  }
 
   .about_title {
     font-size: 18px;
@@ -743,4 +743,24 @@ footer {
     width: 350px;
     height: 350px;
   }
-} /*# sourceMappingURL=style.css.map */
+}
+
+@media screen and (max-width: 353px) {
+  .features_img {
+    width: 258px;
+    height: 212px;
+  }
+
+  .versatile_img {
+    width: 258px;
+    height: 212px;
+  } 
+
+  .navbar_menu_logo {
+    font-size: 17px
+  } 
+
+  .mobile_links {
+    width: 281px
+  }
+}
