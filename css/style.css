@@ -517,7 +517,7 @@ footer {
     height: 400px;
   }
 }
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 860px) {
   .navbar_menu {
     display: none;
   }
