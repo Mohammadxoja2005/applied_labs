@@ -214,6 +214,11 @@ header {
 
 .features_about {
   margin: auto;
+}  
+
+.features_about_detail_gold {
+  color: #C2A578;
+  margin-right: 5px;
 }
 
 .features_about__intro {
