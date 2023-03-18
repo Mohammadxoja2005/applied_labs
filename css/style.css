@@ -589,6 +589,7 @@ footer {
   .mobile_close {
     width: 18px;
     height: 18px;
+    cursor: pointer;
   }
   .mobile_links_container {
     display: flex;
