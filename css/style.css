@@ -83,6 +83,8 @@ header {
   font-family: oswald-regular;
   font-weight: 300;
   max-width: 1440px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .navbar {
