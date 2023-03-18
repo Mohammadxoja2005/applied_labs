@@ -168,7 +168,8 @@ header {
   margin-bottom: 126px;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  font-weight: 400;
 }
 
 .about_des {
@@ -178,12 +179,14 @@ header {
   margin-bottom: 80px;
   max-width: 600px;
   line-height: 23.45px;
+  font-weight: 400;
 }
 
 .about_add_info {
   font-size: 14px;
   color: white;
-  font-family: sans-regular;
+  font-family: sans-regular; 
+  font-weight: 400;
 }
 
 .about_img {
